@@ -3,12 +3,10 @@
 set ASCIIDOCDIR=./tools/asciidoc-8.6.9/
 set PLANTUMLDIR=./tools/
 set SPRINTDIR=%~dp0
-set SRCDIR=./src/Vue/
 set BINDIR=./bin/
 set SRCDOCDIR=./srcdoc/
 set DOCDIR=./doc/
 set PYTHONEXE=C:\Python27\
-set SOURCEPATH=./src/Vue/;./src/Controle/;./src/Modele/
 
 if "%1"=="exe" (
 goto exe 
@@ -27,12 +25,11 @@ goto fin
 @echo ///////////////////////////////////////////////////////
 @echo // COMPILATION des executables
 @echo ///////////////////////////////////////////////////////
-javac -cp .;%BINDIR%;./bin -d %BINDIR% ./src/makeOptiweb
+javac -cp .;%BINDIR%;./bin -d %BINDIR% ./src/MakeOPTIweb.java
 
 @echo ///////////////////////////////////////////////////////
 @echo // EXECUTION de l'app
 @echo ///////////////////////////////////////////////////////
-
 
  java -cp ./bin;.;./tools/junit.jar Vue.OPTI
  cd %SPRINTDIR%
@@ -54,16 +51,15 @@ goto fin
 :test
 
 @echo ///////////////////////////////////////////////////////
-@echo // COMPILATION des tests
-@echo ///////////////////////////////////////////////////////
- javac -cp .;bin\junit.jar -d %BINDIR% %SRCDIR%CsvManager.java
- javac -cp .;bin\junit.jar -d %BINDIR% %SRCDIR%CsvManagerTest.java
-
-@echo ///////////////////////////////////////////////////////
 @echo // EXECUTION des tests
 @echo ///////////////////////////////////////////////////////
-
- java -cp ./bin;.;./tools/junit.jar CsvManagerTest
+casperjs.bat test 
+casperAccueil.js
+casperCredits
+casperEtudiants
+casperIntervenants
+casperProjets
+casperSujets
  cd %SPRINTDIR%
 
  goto fin
