@@ -27,7 +27,7 @@ goto fin
 @echo ///////////////////////////////////////////////////////
 @echo // COMPILATION des executables
 @echo ///////////////////////////////////////////////////////
-javac -cp .;%BINDIR%;./bin -d %BINDIR% ./src/Vue/*.java ./src/Modele/*.java ./src/Controle/*.java
+javac -cp .;%BINDIR%;./bin -d %BINDIR% ./src/makeOptiweb
 
 @echo ///////////////////////////////////////////////////////
 @echo // EXECUTION de l'app
@@ -46,10 +46,9 @@ goto fin
 @echo ///////////////////////////////////////////////////////
 java -jar %PLANTUMLDIR%plantuml.jar -Tpng -o images %SRCDOCDIR%diag0.puml
 
-%PYTHONEXE%python %ASCIIDOCDIR%asciidoc.py -a source-hightlighte=pygments -o %DOCDIR%DocUt.html %SRCDOCDIR%docU.txt
-%PYTHONEXE%python %ASCIIDOCDIR%asciidoc.py -a source-hightlighte=pygments -o %DOCDIR%DocTe.html %SRCDOCDIR%docT.txt
-
-
+%PYTHONEXE%python %ASCIIDOCDIR%asciidoc.py -a source-hightlighte=pygments -o %DOCDIR%docTechnique.html %SRCDOCDIR%docTechnique.txt
+%PYTHONEXE%python %ASCIIDOCDIR%asciidoc.py -a source-hightlighte=pygments -o %DOCDIR%docUtilisateur.html %SRCDOCDIR%docUtilisateur.txt
+%PYTHONEXE%python %ASCIIDOCDIR%asciidoc.py -a source-hightlighte=pygments -o %DOCDIR%présentationFinale.html %SRCDOCDIR%présentationFinale.txt
 goto fin
 
 :test
