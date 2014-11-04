@@ -1,5 +1,3 @@
-
-
 set ASCIIDOCDIR=./tools/asciidoc-8.6.9/
 set PLANTUMLDIR=./tools/
 set SPRINTDIR=%~dp0
@@ -60,7 +58,7 @@ casperEtudiants
 casperIntervenants
 casperProjets
 casperSujets
- cd %SPRINTDIR%
+cd %SPRINTDIR%
 
  goto fin
 
