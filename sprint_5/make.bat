@@ -29,7 +29,7 @@ javac -cp .;%BINDIR%;./bin -d %BINDIR% ./src/MakeOPTIweb.java
 @echo // EXECUTION de l'app
 @echo ///////////////////////////////////////////////////////
 
- java -cp ./bin;.;./tools/junit.jar Vue.OPTI
+ java -cp ./bin;.;./tools/junit.jar MakeOPTIweb
  cd %SPRINTDIR%
 
 goto fin
@@ -51,13 +51,12 @@ goto fin
 @echo ///////////////////////////////////////////////////////
 @echo // EXECUTION des tests
 @echo ///////////////////////////////////////////////////////
-casperjs.bat test 
-casperAccueil.js
-casperCredits
-casperEtudiants
-casperIntervenants
-casperProjets
-casperSujets
+casperjs.bat test casperAccueil.js
+casperjs.bat test casperCredits.js
+casperjs.bat test casperEtudiants.js
+casperjs.bat test casperIntervenants.js
+casperjs.bat test casperProjets.js
+casperjs.bat test casperSujets.js
 cd %SPRINTDIR%
 
  goto fin
