@@ -14,11 +14,42 @@ include::docConf.txt[]
 
 == Bilan technique
 
+.Langage de programmation :
+
+	- Java
+	- Batch
+	- HTML
+	- JQuerry 
+	- Python
+	
+.Autres outils :
+
+	- Oracle IDE
+	- Redmine
+	- SVN
+	- GitHub
+	- Travis
+
+
+
 == Bilan humain
+
+.Repartition de taches
+[width="50%",options="header"]
+|=========================================================================================
+|Membres|BONNET Alexandre   |Quentin LACOSTE    |Yassine Chahid                |Killian Tessier    |ALVES-NETO Jeremy
+
+|Taches |IHM,Librairies(CSV)|JQUERRY,Controller |DOC, Integration continue     |Management,Modele  |Controller,JQUERRY
+|=========================================================================================
 
 == Bilan global 
 
-A vous ...
+== Bilan humain
+
+== Conclusion
+
+Projet intéressant et enrichissant
+
 
 -  item 1
 -  item 2
