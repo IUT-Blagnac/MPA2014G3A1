@@ -3,11 +3,11 @@ before_install:
   - "sudo apt-get install graphviz 2>&1 | tail -n 2"
   - wget http://algec.iut-blagnac.fr/~jmi/MPA/src/plantuml.jar
   - hg clone -r 8.6.7 https://asciidoc.googlecode.com/hg/ asciidoc-8.6.7
-language: java
 before_script:
   - wget https://github.com/n1k0/casperjs/archive/1.0.2.tar.gz -O /tmp/casper.tar.gz
   - tar -xvf /tmp/casper.tar.gz
   - export PATH=$PATH:$PWD/casperjs-1.0.2/bin/
+language: java
 script:
   - java -version
   - javac -version
@@ -16,7 +16,7 @@ script:
   - python asciidoc-8.6.7/asciidoc.py --version
   - dot -V
   -casperjs --version
-  - echo Hello from DUT INFO Blagnac
+ 
   - ls -alF
   - cd sprint_5
   - javac -encoding iso-8859-1 -cp .:./bin -d ./bin ./src/MakeOPTIweb.java
