@@ -9,7 +9,6 @@ before_script:
   - export PATH=$PATH:$PWD/casperjs-1.0.2/bin/
 language: java
 script:
- script:
   - java -version
   - javac -version
   - python -V
