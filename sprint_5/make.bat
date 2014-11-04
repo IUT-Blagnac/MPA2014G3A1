@@ -4,7 +4,8 @@ set SPRINTDIR=%~dp0
 set BINDIR=./bin/
 set SRCDOCDIR=./srcdoc/
 set DOCDIR=./doc/
-set PYTHONEXE=C:\Python27\
+set TESTDIR=./OPTIweb/test/
+set PYTHONEXE=C:/Python27/
 
 if "%1"=="exe" (
 goto exe 
@@ -52,6 +53,7 @@ goto fin
 @echo ///////////////////////////////////////////////////////
 @echo // EXECUTION des tests
 @echo ///////////////////////////////////////////////////////
+cd %TESTDIR%
 casperjs.bat test casperAccueil.js
 casperjs.bat test casperCredits.js
 casperjs.bat test casperEtudiants.js
