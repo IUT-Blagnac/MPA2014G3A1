@@ -9,21 +9,26 @@ before_script:
   - export PATH=$PATH:$PWD/casperjs-1.0.2/bin/
 language: java
 script:
+ script:
   - java -version
   - javac -version
   - python -V
   - phantomjs -v
   - python asciidoc-8.6.7/asciidoc.py --version
   - dot -V
-  -casperjs --version
+  - casperjs --version
+  - echo Hello from DUT INFO Blagnac
   - ls -alF
   - cd sprint_5
-  - javac -encoding iso-8859-1 -cp .:./bin -d ./bin ./src/MakeOPTIweb.java
-  - cd ../OPTIweb/test
+  - javac -cp .:./bin -d ./bin ./src/MakeOPTIweb.java
+  - python ../asciidoc-8.6.7/asciidoc.py -a data-uri -o srcdoc/presentationFinale.html srcdoc/presentationFinale.txt
+  - ls -alF srcdoc
+  - java -cp .:bin MakeOPTIweb
+  - cd OPTIweb/test
+  - cp ../../OPTIweb.html /tmp/OPTIweb.html
   - casperjs test casperAccueil.js
   - casperjs test casperCredits.js
   - casperjs test casperEtudiants.js
   - casperjs test casperIntervenants.js
   - casperjs test casperProjets.js
   - casperjs test casperSujets.js
-  - ls -alF srcdoc

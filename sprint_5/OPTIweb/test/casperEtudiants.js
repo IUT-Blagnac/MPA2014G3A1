@@ -6,7 +6,7 @@ var REP_CAPTURE = "captures/" ;
 var DUMP = false ;
 var REQUIRE = false ;
 var RESOLUTION = "";
-var APP_URL = 'file:///X:/ou/vous/voulez/OPTIweb/test/OPTIweb.html' ;
+var APP_URL = 'file:///tmp/OPTIweb.html' ;
 var APP_VERSION = '0.1' ;
 
 // Test data ////////////////////////////////////
