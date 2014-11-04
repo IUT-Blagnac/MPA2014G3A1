@@ -16,7 +16,6 @@ script:
   - python asciidoc-8.6.7/asciidoc.py --version
   - dot -V
   -casperjs --version
- 
   - ls -alF
   - cd sprint_5
   - javac -encoding iso-8859-1 -cp .:./bin -d ./bin ./src/MakeOPTIweb.java
