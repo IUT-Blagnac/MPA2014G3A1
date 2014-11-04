@@ -5,9 +5,9 @@ before_install:
   - hg clone -r 8.6.7 https://asciidoc.googlecode.com/hg/ asciidoc-8.6.7
 language: java
 before_script:
-  - wget https://github.com/n1k0/casperjs/archive/1.0.3.tar.gz -O /tmp/casper.tar.gz
+  - wget https://github.com/n1k0/casperjs/archive/1.0.2.tar.gz -O /tmp/casper.tar.gz
   - tar -xvf /tmp/casper.tar.gz
-  - export PATH=$PATH:$PWD/casperjs-1.0.3/bin/
+  - export PATH=$PATH:$PWD/casperjs-1.0.2/bin/
 script:
   - java -version
   - javac -version
@@ -15,7 +15,7 @@ script:
   - phantomjs -v
   - python asciidoc-8.6.7/asciidoc.py --version
   - dot -V
-  casperjs --version
+  -casperjs --version
   - echo Hello from DUT INFO Blagnac
   - ls -alF
   - cd sprint_5
