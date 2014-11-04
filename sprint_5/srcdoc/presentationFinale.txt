@@ -6,7 +6,17 @@
 :duration: 30
 :incremental: 1
 
-== Premier transparent
+include::docConf.txt[]
+
+== Bilan fonctionnel
+
+== Bilan financier
+
+== Bilan technique
+
+== Bilan humain
+
+== Bilan global 
 
 A vous ...
 
