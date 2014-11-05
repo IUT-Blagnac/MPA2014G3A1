@@ -42,7 +42,7 @@ goto fin
 @echo ///////////////////////////////////////////////////////
 java -jar %PLANTUMLDIR%plantuml.jar -Tpng -o images %SRCDOCDIR%diag0.puml
 
-%PYTHONEXE%python %ASCIIDOCDIR%asciidoc.py -a source-hightlighte=pygments -o %DOCDIR%presentationFinale.html %SRCDOCDIR%presentationFinale.txt
+%PYTHONEXE%python %ASCIIDOCDIR%asciidoc.py -b slidy -a source-hightlighte=pygments -o %DOCDIR%presentationFinale.html %SRCDOCDIR%presentationFinale.txt
 %PYTHONEXE%python %ASCIIDOCDIR%asciidoc.py -a source-hightlighte=pygments -o %DOCDIR%docUtilisateur.html %SRCDOCDIR%docUtilisateur.txt
 %PYTHONEXE%python %ASCIIDOCDIR%asciidoc.py -a source-hightlighte=pygments -o %DOCDIR%docTechnique.html %SRCDOCDIR%docTechnique.txt
 

@@ -5,73 +5,78 @@
 :copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
 :duration: 30
 :incremental: 1
+:max-width: 45em
 
 include::docConf.txt[]
 
-== Bilan fonctionnel
+ifdef::backend-slidy2[]
+[asciidocslidy, opacity: 0.4; position: absolute; left: 60%; top: 40%;]
+&&&&
+[width="100%",cols="7,^3",frame="none",grid="none"]
+|=============================================
+| | *Powered by* 
+| | image:./images/asciidoc.png["AsciiDoc"]
+| | *and*
+| |  image:./images/w3c_home.png["W3C"] *Slidy*
+|=============================================
+&&&&
+endif::backend-slidy2[]
 
-== Bilan financier
+Bilan technique
+---------------
 
-== Bilan technique
+*********************************************************************
+[role="incremental"]
+- Langages utilisés : 
 
-.Langage de programmation :
-
-	- Java
-	- Batch
-	- HTML
-	- JQuerry 
-	- Python
+	. Java
+	* awt,swing, io, util 
+	. Batch
+	. Python
+	. Web
+	* HTML, JQuerry, CSS
 	
-.Autres outils :
+- Outils utilisés :
 
-	- Oracle IDE
-	- Redmine
-	- SVN
-	- GitHub
-	- Travis
+	* Oracle IDE
+	* Redmine
+	* SVN
+	* GitHub
+	* Travis
+*********************************************************************
 
-
-
-== Bilan humain
-
+Bilan Humain
+------------
 .Repartition de taches
-[width="50%",options="header"]
-|=========================================================================================
-|Membres|BONNET Alexandre   |Quentin LACOSTE    |Yassine Chahid                |Killian Tessier    |ALVES-NETO Jeremy
+[width="80%",options="header"]
+|=========================================================
+|Membres |Taches 
 
-|Taches |IHM,Librairies(CSV)|JQUERRY,Controller |DOC, Integration continue     |Management,Modele  |Controller,JQUERRY
-|=========================================================================================
+|BONNET Alexandre |
+IHM, Librairies(CSV)
 
-== Bilan global 
+|LACOSTE Quentin  |
+JQUERRY, Controller
 
-== Bilan humain
+|CHAHID Yassine  |
+Doc, Integration continue 
 
-== Conclusion
+|TESSIER Killian |
+Team Manager, Modele
 
-Projet intéressant et enrichissant
+|ALVES-NETO Jeremy |
+JQUERRY, Controller
+|=========================================================
 
+Manquants
+---------
+NOTE: 'Note' 
 
--  item 1
--  item 2
--  item 3
+IMPORTANT: 'Important' 
 
-NOTE: On compte en moyenne 3mn par transparent
+.Sidebar
+*********************************************************************
+Manque bilan fonctionnel , financier et global 
+*********************************************************************
 
-== Second transparent
-
-image:./images/diag0.png[]
-
-NOTE: Plus que 8 slides
-
-
-== Troisième transparent
-
-.HelloMonde.java
-----
-include::../src/HelloMonde.java[]
-----
-
-== Perspectives
-
-image:./images/sieste.png[]
 
