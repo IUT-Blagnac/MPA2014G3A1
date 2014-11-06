@@ -7,8 +7,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import Vue.OPTI;
-
 public class MakeOPTIweb {
 
 	/**
@@ -56,8 +54,8 @@ public class MakeOPTIweb {
 	}
 	
 	public static String donnesIntervenant() {
-		ArrayList<String[]> listeInter = lire("E:/Mes documents/MPA/sprint4/OPTIweb/test/intervenants2014_2015.csv") ;
-		ArrayList<String[]> listeProjets = lire("E:/Mes documents/MPA/sprint4/OPTIweb/test/projets2014_2015.csv") ;
+		ArrayList<String[]> listeInter = lire("./OPTIweb/test/intervenants2014_2015.csv") ;
+		ArrayList<String[]> listeProjets = lire("./OPTIweb/test/projets2014_2015.csv") ;
 		String intervenant = "" ;
 		int client = 0 ;
 		int superviseur = 0 ;
@@ -82,10 +80,10 @@ public class MakeOPTIweb {
 	}
 	
 	public static String donnesProjets() {
-		ArrayList<String[]> listeProjets = lire("E:/Mes documents/MPA/sprint4/OPTIweb/test/projets2014_2015.csv") ;
-		ArrayList<String[]> listeEtus = lire("E:/Mes documents/MPA/sprint4/OPTIweb/test/etudiants2014_2015.csv") ;
-		ArrayList<String[]> listeSujets = lire("E:/Mes documents/MPA/sprint4/OPTIweb/test/sujets2014_2015.csv") ;
-		ArrayList<String[]> listeInter = lire("E:/Mes documents/MPA/sprint4/OPTIweb/test/intervenants2014_2015.csv");
+		ArrayList<String[]> listeProjets = lire("./OPTIweb/test/projets2014_2015.csv") ;
+		ArrayList<String[]> listeEtus = lire("./OPTIweb/test/etudiants2014_2015.csv") ;
+		ArrayList<String[]> listeSujets = lire("./OPTIweb/test/sujets2014_2015.csv") ;
+		ArrayList<String[]> listeInter = lire("./OPTIweb/test/intervenants2014_2015.csv");
 		String projet = "" ;
 		String sujet = "" ;
 		String sujetTitre = "" ;
@@ -127,8 +125,8 @@ public class MakeOPTIweb {
 	}
 	
 	public static String donnesSujets() {
-		ArrayList<String[]> listeSujets = lire("E:/Mes documents/MPA/sprint4/OPTIweb/test/sujets2014_2015.csv") ;
-		ArrayList<String[]> listeProjets = lire("E:/Mes documents/MPA/sprint4/OPTIweb/test/projets2014_2015.csv") ;
+		ArrayList<String[]> listeSujets = lire("./OPTIweb/test/sujets2014_2015.csv") ;
+		ArrayList<String[]> listeProjets = lire("./OPTIweb/test/projets2014_2015.csv") ;
 		String sujet = "" ;
 		String groupe = "" ;
 		for (int i = 0;i<listeSujets.size();i++) {
@@ -148,7 +146,7 @@ public class MakeOPTIweb {
 	}
 	
 	public static String donnesEtudiants() {
-		ArrayList<String[]> listeEtus = lire("E:/Mes documents/MPA/sprint4/OPTIweb/test/etudiants2014_2015.csv") ;
+		ArrayList<String[]> listeEtus = lire("./OPTIweb/test/etudiants2014_2015.csv") ;
 		String etudiant = "" ;
 		for (int i = 0;i<listeEtus.size();i++) {
 			etudiant = etudiant + "<li data-find=\""+ listeEtus.get(i)[2] + " " + listeEtus.get(i)[3] + "\"> \n <a href=\"#projets\">" + listeEtus.get(i)[2] + " " + listeEtus.get(i)[3] +"<span class=\"ui-li-count\" title=\"Groupe\">" + listeEtus.get(i)[0] + "</span> \n </a> \n </li>" ;
