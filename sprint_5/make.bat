@@ -54,6 +54,7 @@ goto fin
 @echo // EXECUTION des tests
 @echo ///////////////////////////////////////////////////////
 cd %TESTDIR%
+xcopy ./../../OPTIweb.htm ./tmp/OPTIweb.html
 casperjs.bat test casperAccueil.js
 casperjs.bat test casperCredits.js
 casperjs.bat test casperEtudiants.js
