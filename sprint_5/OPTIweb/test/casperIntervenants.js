@@ -1,7 +1,7 @@
 // run with :
 // casperjs test casperIntervenants.js [--capture=true] [--dump=true]
 
-var CAPTURE = false ;
+var CAPTURE = true ;
 var REP_CAPTURE = "captures/" ;
 var DUMP = false ;
 var REQUIRE = false ;
