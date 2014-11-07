@@ -1,0 +1,4 @@
+Les builds travis ne fonctionnent pas 
+ou du moins aparaissent en rouge a cause d erreurs des tests caspers
+or ces erreurs n en sont pas en effet les éléments dit "manquants" 
+par les tests sont bel et bien présent sur optiWeb
