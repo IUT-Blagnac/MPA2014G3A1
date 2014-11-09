@@ -1,8 +1,7 @@
-= MPA : Présentation finale de recette MPAstaff
+﻿= MPA : Présentation finale de recette groupe3A1
 :Author:  DUT/INFO/M3301
 :lang: fr
-:slideshowlocation: Your computer
-:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
+:copyright: {date={localdate}} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
 :duration: 30
 :incremental: 1
 :max-width: 45em
@@ -30,7 +29,7 @@ Bilan technique
 - Langages utilisés : 
 
 	. Java
-	* awt,swing, io, util 
+	* Librairies : awt,swing, io, util 
 	. Batch
 	. Python
 	. Web
@@ -68,15 +67,32 @@ Team Manager, Modele
 JQUERRY, Controller
 |=========================================================
 
-Manquants
----------
-NOTE: 'Note' 
+Bilan Financier
+---------------
+.Travail hebdomadaire
+[width="100%",cols="^1,^1,^1,^1,^1",options="header"]
+|=========================================================
+|Nombre de Séances |Travail à l'IUT|Travail personnel|Total en Heures|Total en demi-journées
 
-IMPORTANT: 'Important' 
+|4|30h|6h|288h/8semaines|54
 
-.Sidebar
+|=========================================================
+
+Bilan Fonctionnel
+-----------------
+image::UC.png[link="./ImagesDocTec/UC.png",width="80%",height="100%"]
+
+Bilan Global
+------------
+.On pense que:
 *********************************************************************
-Manque bilan fonctionnel , financier et global 
+[role="incremental"]
+ 
+	. Il y a une répartition efficace des taches
+	. On a découvert de nouveaux languages et outils
+	. On a acquis de nouvelles connaissances
+	. On était motivé
+	. C'est un projet enrichissant
 *********************************************************************
 
 
